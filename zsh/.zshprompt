@@ -1,0 +1,3 @@
+autoload -U colors && colors
+ZSH_COLOR="$fg[green]"
+PS1="%{$ZSH_COLOR%}%m[%{$fg_no_bold[white]%}%1d%{$ZSH_COLOR%}]%#$reset_color "
