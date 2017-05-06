@@ -1,0 +1,33 @@
+Host github.com
+	 IdentityFile ~/.ssh/id_github
+Host gitlab.com
+	 IdentityFile ~/.ssh/id_gitlab
+Host void-qubes
+	 Hostname 10.137.3.16
+	 IdentityFile ~/.ssh/id_personal
+ 	 User kulinacs
+Host bootstrap-pi
+	 Hostname 192.168.1.106
+	 IdentityFile ~/.ssh/id_personal
+ 	 User kulinacs
+Host turing
+	 Hostname 192.168.1.111
+	 IdentityFile ~/.ssh/id_personal
+ 	 ProxyJump tropyc
+ 	 User kulinacs
+Host daemen
+	 Hostname 149.56.46.156
+	 IdentityFile ~/.ssh/id_personal
+ 	 User kulinacs
+Host tropyc
+	 Hostname 70.121.46.121
+	 IdentityFile ~/.ssh/id_personal
+	 User kulinacs
+Host ctfd
+	 Hostname 10.137.3.9
+	 IdentityFile ~/.ssh/id_personal
+	 User kulinacs
+Host ctfd-testing
+	 Hostname 10.137.3.28
+	 IdentityFile ~/.ssh/id_personal
+	 User kulinacs

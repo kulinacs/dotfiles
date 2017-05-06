@@ -1,1 +1,3 @@
 *.histfile
+id*
+known_hosts*

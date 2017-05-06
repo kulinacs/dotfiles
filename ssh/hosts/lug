@@ -1,0 +1,4 @@
+Host lugidle
+	 Hostname idle.utdlug.org
+ 	 IdentityFile ~/.ssh/id_lug
+	 User kulinacs

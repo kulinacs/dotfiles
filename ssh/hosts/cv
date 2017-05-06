@@ -1,0 +1,6 @@
+Match canonical host *.collegiumv.org
+	IdentityFile ~/.ssh/id_cv
+	User kulinacs
+
+Host carbon
+	Hostname carbon.collegiumv.org
