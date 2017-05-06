@@ -1,0 +1,11 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.Xresources: Xresources
+    ~/.urxvt/ext/resize-font: urxvt/ext/resize-font/resize-font
+    ~/.gitconfig: git/gitconfig
+    ~/.gitignoreall: git/gitignoreall

@@ -1,0 +1,6 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot
+[submodule "urxvt/ext/resize-font"]
+	path = urxvt/ext/resize-font
+	url = https://github.com/simmel/urxvt-resize-font.git
