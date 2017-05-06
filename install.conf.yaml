@@ -4,6 +4,11 @@
 
 - clean: ['~']
 
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+    - mkdir -p ~/.urxvt/ext/
+    - mkdir -p ~/.emacs.d/themes/
+
 - link:
     ~/.Xresources: Xresources
     ~/.urxvt/ext/resize-font: urxvt/ext/resize-font/resize-font
