@@ -11,3 +11,4 @@
     ~/.gitignoreall: git/gitignoreall
     ~/.zshenv: zshenv
     ~/.zsh: zsh
+    ~/.tmux.conf: tmux.conf
