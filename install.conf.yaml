@@ -12,3 +12,4 @@
     ~/.zshenv: zshenv
     ~/.zsh: zsh
     ~/.tmux.conf: tmux.conf
+    ~/.ssh: ssh
