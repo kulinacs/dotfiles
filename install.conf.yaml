@@ -13,3 +13,5 @@
     ~/.zsh: zsh
     ~/.tmux.conf: tmux.conf
     ~/.ssh: ssh
+    ~/.emacs.d/init.el: emacs/init.el
+    ~/.emacs.d/themes/molokai-theme.el: emacs/themes/molokai/molokai-theme.el
