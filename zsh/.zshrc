@@ -5,7 +5,6 @@
 # General Settings
 export EDITOR="emacs"
 export QUBES_GPG_DOMAIN="sys-gpg"
-export TERM="screen-256color"
 export PASSWORD_STORE_ENABLE_EXTENSIONS="true"
 
 # Source external files
