@@ -1,3 +1,4 @@
 *.histfile
 id*
 known_hosts*
+zsh/.zcompdump
