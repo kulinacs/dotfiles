@@ -2,3 +2,6 @@
 id*
 known_hosts*
 zsh/.zcompdump
+weechat/certs
+weechat/logs
+*.log
