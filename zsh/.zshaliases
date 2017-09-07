@@ -1,3 +1,0 @@
-alias ls="ls --color=auto"
-alias zshreload="source $ZDOTDIR/.zshrc"
-alias xreload="xrdb ~/.Xresources"
