@@ -45,9 +45,6 @@
 	email = nicklaus@kulinacs.com
 	signingkey = 3CBFA27B97BC97FDCE79C554B972DCD093E03256
 
-[gpg]
-	program = qubes-gpg-client-wrapper
-
 [commit]
 	gpgsign = true
 
@@ -59,3 +56,5 @@
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+[gpg]
+	program = gpg2
