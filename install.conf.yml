@@ -11,11 +11,12 @@
 
 - link:
     ~/.Xresources: Xresources
+    ~/.xinitrc: xinitrc
     ~/.urxvt/ext/resize-font: urxvt/ext/resize-font/resize-font
     ~/.gitconfig: git/gitconfig
     ~/.gitignoreall: git/gitignoreall
-    ~/.zshenv: zshenv
-    ~/.zsh: zsh
+    ~/.zshrc: zshrc
+    ~/.zprofile: zprofile
     ~/.tmux.conf: tmux.conf
     ~/.ssh: ssh
     ~/.emacs.d/init.el: emacs/init.el
