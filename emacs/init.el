@@ -14,15 +14,19 @@
 (require 'diminish)
 (require 'bind-key)
 
+(use-package dockerfile-mode
+	     :ensure t)
 (use-package flycheck
-	     :ensure t)
-(use-package markdown-mode
-	     :ensure t)
-(use-package yaml-mode
 	     :ensure t)
 (use-package jinja2-mode
 	     :ensure t)
 (use-package magit
+	     :ensure t)
+(use-package markdown-mode
+	     :ensure t)
+(use-package puppet-mode
+	     :ensure t)
+(use-package yaml-mode
 	     :ensure t)
 
 (setq backup-directory-alist
