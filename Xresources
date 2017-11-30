@@ -8,7 +8,7 @@ Xft.lcdfilter:         lcddefault
 ! URxvt
 URxvt.scrollBar:       false
 URxvt.fading:          5
-URxvt.visualBell:      true
+URxvt.visualBell:      false
 URxvt.font:            xft:bitstream vera sans mono:size=12:antialias=true
 URxvt.boldFont:        xft:bitstream vera sans mono:bold:size=12:antialias=true
 URxvt.letterSpace:     -.5
