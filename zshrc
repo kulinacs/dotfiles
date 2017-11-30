@@ -7,7 +7,8 @@ PROMPT="%F{cyan}%m[%F{white}%1d%F{cyan}]%#%f "
 export GPG_TTY=$(tty)
 
 # Add gopath if found
-stat ~/go/bin &> /dev/null && PATH=$PATH:~/go/bin
+export GOPATH=$HOME/go
+stat ${GOPATH}/bin &> /dev/null && PATH=$PATH:${GOPATH}/bin
 
 bindkey -e
 
@@ -17,8 +18,7 @@ compinit
 alias ls="ls --color=auto"
 alias zshreload="source ~/.zshrc"
 alias xreload="xrdb ~/.Xresources"
-alias docker-rms="sudo docker ps -aq --no-trunc | sudo xargs docker rm"
-alias docker-rmid="sudo docker images --quiet --filter "dangling=true" | sudo xargs docker rmi"
+alias home-socks="ssh -D 1701 -C -q -N diffie"
 
 # GRC
 if [[ "$TERM" != dumb ]] && (( $+commands[grc] )) ; then
