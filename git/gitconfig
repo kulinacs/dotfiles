@@ -43,10 +43,10 @@
 [user]
 	name = Nicklaus McClendon
 	email = nicklaus@kulinacs.com
-	signingkey = 3CBFA27B97BC97FDCE79C554B972DCD093E03256
+	signingkey = 46A9DD8FA1E6C6E3E8A8DA452ABE35E0E17584FE
 
 [commit]
-	gpgsign = true
+#	gpgsign = true
 
 [core]
 	editor = emacs -nw

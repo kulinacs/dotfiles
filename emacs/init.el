@@ -17,13 +17,7 @@
 	     :ensure t)
 (use-package flycheck
 	     :ensure t)
-(use-package jinja2-mode
-	     :ensure t)
-(use-package magit
-	     :ensure t)
 (use-package markdown-mode
-	     :ensure t)
-(use-package puppet-mode
 	     :ensure t)
 (use-package yaml-mode
 	     :ensure t)
@@ -32,10 +26,6 @@
       `((".*" . ,temporary-file-directory)))
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
-
-;; Emacs Daemon fun
-(global-unset-key (kbd "C-x C-d"))
-(global-set-key (kbd "C-x C-d") 'kill-emacs)
 
 ;; Stupid Emacs suspend
 (global-unset-key (kbd "C-z"))
@@ -55,9 +45,15 @@
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; Tabs
-(setq standard-indent 4)
-(setq tab-width 4)
-(define-key text-mode-map (kbd "TAB") 'self-insert-command)
+(setq standard-indent 2)
+(setq tab-width 2)
+(setq-default indent-tabs-mode nil)
+
+;; Javascript Customization
+(setq js-indent-level 2)
+
+;; Enable flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;; Themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
@@ -69,7 +65,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (go-mode qml-mode ## yaml-mode markdown-mode flycheck use-package))))
+    (protobuf-mode handlebars-mode flycheck-ocaml tuareg caml php-mode go-mode qml-mode ## yaml-mode markdown-mode flycheck use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
