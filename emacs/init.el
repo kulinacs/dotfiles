@@ -17,7 +17,11 @@
 	     :ensure t)
 (use-package flycheck
 	     :ensure t)
+(use-package go-mode
+	     :ensure t)
 (use-package markdown-mode
+	     :ensure t)
+(use-package protobuf-mode
 	     :ensure t)
 (use-package yaml-mode
 	     :ensure t)
@@ -65,15 +69,10 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (protobuf-mode handlebars-mode flycheck-ocaml tuareg caml php-mode go-mode qml-mode ## yaml-mode markdown-mode flycheck use-package))))
+    (puppet-mode arduino-mode protobuf-mode handlebars-mode flycheck-ocaml tuareg caml php-mode go-mode qml-mode ## yaml-mode markdown-mode flycheck use-package))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-;; Mitigate Bug#28350 (security) in Emacs 25.2 and earlier.
-(eval-after-load "enriched"
-  '(defun enriched-decode-display-prop (start end &optional param)
-     (list start end)))

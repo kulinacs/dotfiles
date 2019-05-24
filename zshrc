@@ -18,9 +18,6 @@ compinit
 alias ls="ls --color=auto"
 alias zshreload="source ~/.zshrc"
 alias xreload="xrdb ~/.Xresources"
-alias home-socks="ssh -D 1701 -C -q -N diffie"
-alias exploit-socks="ssh -D 1701 -C -q -N exploit"
-alias exploit-vnc="ssh -X aghanim -L 5901:localhost:5901"
 
 # GRC
 if [[ "$TERM" != dumb ]] && (( $+commands[grc] )) ; then
@@ -75,10 +72,7 @@ if [[ "$TERM" != dumb ]] && (( $+commands[grc] )) ; then
   unset cmds cmd
 fi
 
-PATH=/home/kulinacs/.nvm/versions/node/v9.5.0/bin:/home/kulinacs/.local/bin:$PATH
+PATH=/home/kulinacs/.local/bin:$PATH
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-# opam configuration
-test -r /home/kulinacs/.opam/opam-init/init.zsh && . /home/kulinacs/.opam/opam-init/init.zsh > /dev/null 2> /dev/null || true

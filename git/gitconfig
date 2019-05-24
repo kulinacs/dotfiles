@@ -46,15 +46,10 @@
 	signingkey = 46A9DD8FA1E6C6E3E8A8DA452ABE35E0E17584FE
 
 [commit]
-#	gpgsign = true
+	gpgsign = true
 
 [core]
 	editor = emacs -nw
 	excludesfile = ~/.gitignoreall
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
 [gpg]
 	program = gpg2
