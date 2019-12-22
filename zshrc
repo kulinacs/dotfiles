@@ -20,3 +20,8 @@ PROMPT="%F{cyan}%m[%F{white}%1d%F{cyan}]%#%f "
 # ALIASES
 alias ls="ls --color=auto"
 alias zshreload="source ~/.zshrc"
+
+# PATH
+export PATH="/home/kulinacs/.local/bin:${PATH}"
+
+[[ -s "/home/kulinacs/.gvm/scripts/gvm" ]] && source "/home/kulinacs/.gvm/scripts/gvm"
