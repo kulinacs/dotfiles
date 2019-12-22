@@ -10,16 +10,18 @@
     - mkdir -p ~/.emacs.d/themes/
 
 - link:
-    ~/.Xresources: Xresources
-    ~/.xinitrc: xinitrc
-    ~/.urxvt/ext/resize-font: urxvt/ext/resize-font/resize-font
+    ~/.config/alacritty: alacritty
+#    ~/.Xresources: Xresources
+#    ~/.xinitrc: xinitrc
+#    ~/.urxvt/ext/resize-font: urxvt/ext/resize-font/resize-font
     ~/.gitconfig: git/gitconfig
     ~/.gitignoreall: git/gitignoreall
+    ~/.config/i3: i3
     ~/.zshrc: zshrc
     ~/.zprofile: zprofile
     ~/.tmux.conf: tmux.conf
-    ~/.ssh: ssh
+#    ~/.ssh: ssh
     ~/.emacs.d/init.el: emacs/init.el
     ~/.emacs.d/themes/molokai-theme.el: emacs/themes/molokai/molokai-theme.el
-    ~/.password-store: password-store
-    ~/.weechat: weechat
+#    ~/.password-store: password-store
+#    ~/.weechat: weechat
